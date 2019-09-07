@@ -13,9 +13,9 @@ const PicNav = () => {
             alt="Hanzlik-headshot"
           />
           <div className="Headshot-Desc">
-            <strong>Meet Shane R. Hanzlik, MD</strong>
-            <br />A sports medicine specialist with a clinical focus on
-            cartilage restoration... READ MORE >
+            <strong>Meet Shane R. Hanzlik, MD</strong>A sports medicine
+            specialist with a clinical focus on cartilage restoration... READ
+            MORE >
           </div>
         </div>
         <div className="Pic-Mid">

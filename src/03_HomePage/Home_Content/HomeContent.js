@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./HomeContent.css";
 import ReactPlayer from "react-player";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 const HomeContent = () => {
+  const Desktop = useMediaQuery("(min-width:820px)");
+  const Mobile = useMediaQuery("(max-width:820px)");
+
   const [showVid, setShowVid] = useState(false);
 
   const handlePlay = () => {
@@ -27,14 +31,26 @@ const HomeContent = () => {
         className={showVid ? "Vid-Mod-Outer" : "Dr-Vid"}
         onClick={() => setShowVid(false)}
       >
-        <ReactPlayer
-          url={"https://www.youtube.com/watch?v=9jMYjeyD30I"}
-          width={showVid ? "70%" : "100%"}
-          height={showVid ? "40%" : "100%"}
-          className={showVid ? "Vid-Mod-Inner" : "Small Vid"}
-          onPlay={() => handlePlay()}
-          playing={false}
-        />
+        {Desktop && (
+          <ReactPlayer
+            url={"https://www.youtube.com/watch?v=9jMYjeyD30I"}
+            width={showVid ? "70%" : "100%"}
+            height={showVid ? "40%" : "100%"}
+            className={showVid ? "Vid-Mod-Inner" : "Small Vid"}
+            onPlay={() => handlePlay()}
+            onPause={() => setShowVid(false)}
+            playing={false}
+          />
+        )}
+        {Mobile && (
+          <ReactPlayer
+            url={"https://www.youtube.com/watch?v=9jMYjeyD30I"}
+            width="100%"
+            height="100%"
+            className="Small Vid"
+            playing={false}
+          />
+        )}
       </div>
     </div>
   );

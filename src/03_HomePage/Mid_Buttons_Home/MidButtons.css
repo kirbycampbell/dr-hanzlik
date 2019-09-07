@@ -33,3 +33,31 @@
 .Mid-Btn:hover {
   background-color: #293a6e;
 }
+
+@media all and (max-width: 820px) {
+  .Outer-MidButtons {
+    height: 70px;
+  }
+  .Inner-MidButtons {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+  }
+
+  .Mid-Btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 0.666%;
+    width: 32%;
+    height: 90%;
+    background-color: #cf9700;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .Mid-Btn:hover {
+    background-color: #293a6e;
+  }
+}

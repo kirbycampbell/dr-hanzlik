@@ -28,3 +28,18 @@ a:focus {
   border-radius: 50%;
   display: inline-block;
 }
+@media all and (max-width: 800px) {
+  .Outer-Footer {
+    height: 12vh;
+  }
+
+  .Inner-Footer {
+    padding-left: 16vw;
+    padding-right: 16vw;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .dot {
+  }
+}

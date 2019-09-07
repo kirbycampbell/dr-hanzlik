@@ -5,7 +5,7 @@ const MidHome = () => {
   return (
     <div className="Outer-MidHome">
       <div className="Inner-MidHome">
-        <div className="Left-Spacer"></div>
+        <div className="Left-Spacer" />
         <div className="Left-Buttons">
           <div className="btn-home">Cartilage Restoration</div>
           <div className="btn-home">Hip Arthroscopy</div>
@@ -17,11 +17,13 @@ const MidHome = () => {
         </div>
         <div className="Mid-Desc">
           <div className="Desc-Title">Hip Arthroscopy</div>
-          <li>Acetabular Labral Repair</li>
-          <li>Femoral Osteochondroplasty</li>
-          <li>Acetabular Rim Recession</li>
-          <li>Treatment of FAI</li>
-          <li>Loose Body Removal</li>
+          <ul>
+            <li>Acetabular Labral Repair</li>
+            <li>Femoral Osteochondroplasty</li>
+            <li>Acetabular Rim Recession</li>
+            <li>Treatment of FAI</li>
+            <li>Loose Body Removal</li>
+          </ul>
         </div>
         <div className="Right-illus">Right Illu</div>
       </div>

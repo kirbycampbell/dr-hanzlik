@@ -7,7 +7,8 @@
   display: flex;
   align-items: center;
   height: 12vh;
-  min-height: 100px;
+  min-height: 70px;
+  max-height: 120px;
   max-width: 1400px;
   margin: auto;
 }
@@ -44,4 +45,57 @@
 .Logo {
   max-height: 80%;
   max-width: 80%;
+}
+
+.Outside-Bars {
+  display: none;
+}
+
+@media all and (max-width: 800px) {
+  .TopBar-Inner {
+    flex-direction: column;
+    height: 15vh;
+    margin-top: 8px;
+  }
+  .TopBar-Name {
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+  }
+  .Name-Title {
+    font-size: 22px;
+    text-align: center;
+  }
+  .Job-Title {
+    font-size: 13px;
+    text-align: center;
+  }
+  .TopBar-Logo {
+    width: 25%;
+    margin-right: 0%;
+  }
+
+  .Logo {
+    max-height: 90%;
+    max-width: 90%;
+    margin-bottom: 8px;
+  }
+
+  .Outside-Bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    margin-right: 20px;
+    height: 12vh;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .Menu-Btn-Mobile {
+    display: flex;
+    height: 20px;
+    font-size: 35px;
+    color: white;
+  }
 }
