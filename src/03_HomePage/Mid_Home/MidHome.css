@@ -1,0 +1,77 @@
+.Outer-MidHome {
+  height: 200px;
+  background-color: #191d5b;
+}
+.Inner-MidHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+.Left-Spacer {
+  background-color: #191d5b;
+  width: 5%;
+  height: 100%;
+}
+.Left-Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191d5b;
+  width: 33.5%;
+  height: 100%;
+}
+
+.Mid-Desc {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
+  padding-left: 4%;
+  width: 32%;
+  height: 100%;
+  background-color: white;
+}
+
+.Desc-Title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0px;
+  color: #191d5b;
+}
+
+li {
+  list-style: none;
+  margin-left: 10px;
+  color: #191d5b;
+}
+
+.Right-illus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25.5%;
+  height: 100%;
+  background-color: white;
+}
+.btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25%;
+  width: 100%;
+  color: white;
+  border-bottom: 1px solid #cf9700;
+  border-left: 1px solid #cf9700;
+}
+
+.btn-home:hover {
+  background-color: #cf9700;
+  cursor: pointer;
+  text-shadow: 2px 1px rgb(77, 77, 77);
+}

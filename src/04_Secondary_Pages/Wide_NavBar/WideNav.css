@@ -1,0 +1,33 @@
+.Sec-Nav-Section {
+  padding: 1%;
+  width: 98%;
+  height: 30%;
+  color: white;
+  font-size: 13px;
+  background-color: #293a6e;
+}
+
+.Inner-Sec-Nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  width: 85%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.Sec-Nav-Btn {
+  color: white;
+  font-size: 14px;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 0px;
+  text-decoration: none;
+  height: 100%;
+}
+
+.Sec-Nav-Btn:hover {
+  color: rgba(255, 169, 56, 0.918);
+}

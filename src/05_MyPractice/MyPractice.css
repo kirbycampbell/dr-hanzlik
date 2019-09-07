@@ -1,0 +1,66 @@
+.Outer-MyPrac {
+  min-height: 40vh;
+}
+
+.Practice-Columns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+.Left-Maj-Col {
+  margin-left: 5%;
+  margin-right: 3%;
+  width: 56%;
+}
+
+.Outer-Vid {
+  height: 200px;
+  width: 90%;
+  padding: 1.5%;
+}
+
+.Mid-Vid {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.Left-About-div {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  padding: 3%;
+  height: 100%;
+  text-align: left;
+  margin-top: 50px;
+  font-size: 13.5px;
+}
+.My-Practice {
+  color: #cf9700;
+  font-size: 16px;
+}
+
+.Right-Maj-Col {
+  position: relative;
+  display: flex;
+  width: 36%;
+  height: 100%;
+  background-color: #e0eaed;
+}
+.Button-Col {
+  width: 100%;
+  height: 100%;
+}
+.btn-col-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,32 @@
+.Sec-Parent {
+  height: 180px;
+  display: flex;
+  width: 100%;
+  background-color: #cf9700;
+}
+
+.Sec-Headshot-Outer {
+  display: flex;
+  flex-direction: column;
+  max-width: 210px;
+  margin-left: auto;
+}
+
+.Sec-Headshot {
+  height: 180px;
+}
+
+.Sec-Pic-Mid {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 66%;
+  overflow: hidden;
+  margin-right: auto;
+}
+
+.Sec-Background-Pic {
+  height: 180px;
+}

@@ -1,0 +1,81 @@
+.Outer-Mid {
+  min-height: 300px;
+  max-height: 300px;
+}
+
+.Top-Portion {
+  display: flex;
+  height: 250px;
+  width: 100%;
+  background-color: #cf9700;
+}
+
+.Headshot-Outer {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  max-width: 210px;
+  margin-left: auto;
+}
+
+.Headshot {
+  height: 230px;
+}
+
+.Headshot-Desc {
+  text-align: left;
+  flex-direction: column;
+  padding: 10px;
+  height: 60px;
+  max-width: 235px;
+  background-color: #191d5b;
+  color: white;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.Pic-Mid {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 66%;
+  overflow: hidden;
+  margin-right: auto;
+}
+
+.Background-Pic {
+  height: 250px;
+}
+
+.Bot-Portion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #293a6e;
+}
+
+.Nav-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  padding: 1%;
+  width: 96%;
+  height: 30%;
+  color: white;
+  font-size: 13px;
+}
+
+.Nav-Btn {
+  color: white;
+  font-size: 11px;
+  margin: auto;
+  cursor: pointer;
+  padding: 5px 0px;
+  text-decoration: none;
+}

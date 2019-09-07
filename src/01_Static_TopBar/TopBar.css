@@ -1,0 +1,47 @@
+.TopBar-Outer {
+  background-color: #293a6e;
+  color: white;
+  overflow: hidden;
+}
+.TopBar-Inner {
+  display: flex;
+  align-items: center;
+  height: 12vh;
+  min-height: 100px;
+  max-width: 1400px;
+  margin: auto;
+}
+.TopBar-Name {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 7.5%;
+  width: 62.5%;
+  height: 80%;
+}
+
+.Name-Title {
+  font-size: 26px;
+  text-align: left;
+}
+
+.Job-Title {
+  font-size: 14px;
+  text-align: left;
+}
+
+.TopBar-Logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22.5%;
+  height: 80%;
+  margin-right: 7.5%;
+}
+
+.Logo {
+  max-height: 80%;
+  max-width: 80%;
+}
