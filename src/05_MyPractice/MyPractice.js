@@ -15,7 +15,7 @@ const MyPractice = props => {
           <div className="Outer-Vid">
             <ReactPlayer
               url={"https://www.youtube.com/watch?v=9jMYjeyD30I"}
-              height="200px"
+              height="100%"
               width="100%"
               className="Mid-Vid"
               playing={false}
