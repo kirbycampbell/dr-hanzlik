@@ -81,7 +81,7 @@ li {
   .Outer-MidHome {
     display: flex;
     height: 100%;
-    background-color: #191d5b;
+    background-color: #191d5b00;
   }
   .Inner-MidHome {
     display: flex;
@@ -102,8 +102,8 @@ li {
     align-items: center;
     flex-direction: row;
     font-size: 14px;
-    background-color: #191d5b;
-    width: 99%;
+    background-color: #191d5b00;
+    width: 90%;
     height: 90px;
     padding-bottom: 0px;
   }
@@ -111,11 +111,13 @@ li {
   .btn-home {
     display: flex;
     justify-content: center;
+    border-radius: 5px;
     align-items: center;
     height: 95%;
-    width: 23%;
+    width: 23.5%;
     margin: auto;
     color: white;
+    background-color: #191d5b;
     border: 1px solid #cf980093;
   }
 
