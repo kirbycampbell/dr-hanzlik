@@ -27,8 +27,8 @@
     text-align: center;
     background: white;
     transition: all 0.5s;
-    border-top: 1px solid rgba(0, 0, 0, 0.384);
-    margin-bottom: 1px;
+    border-top: 0px solid rgba(0, 0, 0, 0.384);
+    margin-bottom: 0px;
   }
 
   .hidden {
@@ -37,6 +37,7 @@
     overflow: hidden;
     transition: all 0.5s;
     z-index: -10;
+    margin: 0;
   }
 
   .show {
@@ -53,7 +54,8 @@
     width: 100%;
     text-align: center;
     font-size: 22px;
-    color: black;
+    color: #223675;
+    font-family: "Franklin Gothic Medium";
     border-bottom: 1px solid rgba(0, 0, 0, 0.384);
     text-decoration: none;
     transition: all 0.2s;

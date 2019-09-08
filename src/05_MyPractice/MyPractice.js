@@ -3,17 +3,20 @@ import "./MyPractice.css";
 import SecondaryPages from "../04_Secondary_Pages/SecondaryPages";
 import ReactPlayer from "react-player";
 
-const MyPractice = () => {
+const MyPractice = props => {
   return (
     <div className="Outer-MyPrac">
-      <SecondaryPages />
+      <SecondaryPages
+        mobileMenu={props.mobileMenu}
+        setMobileMenu={props.setMobileMenu}
+      />
       <div className="Practice-Columns">
         <div className="Left-Maj-Col">
           <div className="Outer-Vid">
             <ReactPlayer
               url={"https://www.youtube.com/watch?v=9jMYjeyD30I"}
+              height="200px"
               width="100%"
-              height="140%"
               className="Mid-Vid"
               playing={false}
             />

@@ -30,3 +30,39 @@
 .Sec-Background-Pic {
   height: 180px;
 }
+@media all and (max-width: 820px) {
+  .Sec-Parent {
+    display: flex;
+    width: 100%;
+    background-color: #cf980000;
+  }
+
+  .Sec-Headshot-Outer {
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    margin-left: auto;
+  }
+
+  .Sec-Headshot {
+    height: 180px;
+  }
+
+  .Sec-Pic-Mid {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 66%;
+    overflow: hidden;
+    margin-right: auto;
+  }
+  .Sec-Background-Pic {
+    z-index: -10;
+    position: absolute;
+    height: 180px;
+
+    transform: scaleX(1);
+  }
+}

@@ -22,20 +22,63 @@ const AppRouter = () => {
             <HomePage mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
           )}
         />
-        <Route exact path="/Practice" render={props => <MyPractice />} />
+        <Route
+          exact
+          path="/Practice"
+          render={props => (
+            <MyPractice mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
+          )}
+        />
         <Route
           exact
           path="/Patient-Info"
-          render={props => <SecondaryPages />}
+          render={props => (
+            <SecondaryPages
+              mobileMenu={mobileMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          )}
         />
-        <Route exact path="/Services" render={props => <SecondaryPages />} />
+        <Route
+          exact
+          path="/Services"
+          render={props => (
+            <SecondaryPages
+              mobileMenu={mobileMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          )}
+        />
         <Route
           exact
           path="/Appointments"
-          render={props => <SecondaryPages />}
+          render={props => (
+            <SecondaryPages
+              mobileMenu={mobileMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          )}
         />
-        <Route exact path="/FAQs" render={props => <SecondaryPages />} />
-        <Route exact path="/Contact" render={props => <SecondaryPages />} />
+        <Route
+          exact
+          path="/FAQs"
+          render={props => (
+            <SecondaryPages
+              mobileMenu={mobileMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          )}
+        />
+        <Route
+          exact
+          path="/Contact"
+          render={props => (
+            <SecondaryPages
+              mobileMenu={mobileMenu}
+              setMobileMenu={setMobileMenu}
+            />
+          )}
+        />
       </div>
       <Footer />
     </Router>

@@ -31,3 +31,8 @@
 .Sec-Nav-Btn:hover {
   color: rgba(255, 169, 56, 0.918);
 }
+@media all and (max-width: 820px) {
+  .Sec-Nav-Section {
+    display: none;
+  }
+}
