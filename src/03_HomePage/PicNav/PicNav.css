@@ -60,24 +60,36 @@
 
 .Nav-Section {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   text-align: center;
   flex-direction: row;
-  padding: 1%;
-  width: 96%;
+
+  width: 100%;
   height: 30%;
+  /* background-color: #293a6e; */
   color: white;
-  font-size: 13px;
+  /* font-size: 15px; */
+  font-family: "Roboto Condensed", sans-serif;
+  font-stretch: condensed;
 }
 
 .Nav-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-size: 11px;
+  font-size: 15px;
+  letter-spacing: -0.5px;
   margin: auto;
+  height: 100%;
+  text-align: left;
   cursor: pointer;
-  padding: 5px 0px;
   text-decoration: none;
+}
+.Nav-Btn:hover {
+  background-color: #5dc08e17;
+  color: rgb(255, 236, 196);
 }
 
 strong {
