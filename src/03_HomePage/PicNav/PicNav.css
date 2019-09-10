@@ -1,11 +1,10 @@
 .Outer-Mid {
-  min-height: 300px;
-  max-height: 300px;
+  height: 400px;
 }
 
 .Top-Portion {
   display: flex;
-  height: 250px;
+  height: 325px;
   width: 100%;
   background-color: #cf9700;
 }
@@ -13,47 +12,45 @@
 .Headshot-Outer {
   display: flex;
   flex-direction: column;
-  height: 30vh;
-  max-width: 210px;
   margin-left: auto;
+  height: 400px;
 }
 
 .Headshot {
-  height: 220px;
+  height: 300px;
 }
 
 .Headshot-Desc {
   text-align: left;
   flex-direction: column;
-  padding: 10px;
-  height: 60px;
-  max-width: 235px;
+  padding: 15px;
+  height: 100px;
+  width: 264px;
   background-color: #191d5b;
   color: white;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .Pic-Mid {
-  height: 300px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 66%;
   overflow: hidden;
   margin-right: auto;
 }
 
 .Background-Pic {
-  height: 250px;
+  height: 325px;
 }
 
 .Bot-Portion {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 75px;
   width: 100%;
   background-color: #293a6e;
 }
@@ -70,8 +67,10 @@
   /* background-color: #293a6e; */
   color: white;
   /* font-size: 15px; */
-  font-family: "Roboto Condensed", sans-serif;
-  font-stretch: condensed;
+  /* font-family: "Roboto Condensed", sans-serif;
+  font-stretch: condensed; */
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
 }
 
 .Nav-Btn {
@@ -79,13 +78,18 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 15px;
-  letter-spacing: -0.5px;
+  font-size: calc(14px + 6 * ((100vw - 320px) / 680));
+  letter-spacing: -0.3px;
   margin: auto;
   height: 100%;
   text-align: left;
   cursor: pointer;
   text-decoration: none;
+}
+@media all and (min-width: 1280px) {
+  .Nav-Btn {
+    font-size: 20px;
+  }
 }
 .Nav-Btn:hover {
   background-color: #5dc08e17;
