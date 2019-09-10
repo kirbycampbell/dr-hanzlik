@@ -6,6 +6,7 @@ import Footer from "./02_Static_Footer/Footer";
 import SecondaryPages from "./04_Secondary_Pages/SecondaryPages";
 import "./App.css";
 import MyPractice from "./05_MyPractice/MyPractice";
+import ContactUs from "./10_Contact_Us/ContactUs";
 
 const AppRouter = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -73,10 +74,7 @@ const AppRouter = () => {
           exact
           path="/Contact"
           render={props => (
-            <SecondaryPages
-              mobileMenu={mobileMenu}
-              setMobileMenu={setMobileMenu}
-            />
+            <ContactUs mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
           )}
         />
       </div>

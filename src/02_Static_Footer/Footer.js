@@ -7,7 +7,11 @@ const Footer = () => {
       <div className="Inner-Footer">
         COPYRIGHT 2019 <span className="dot" /> ALL RIGHTS RESERVED{" "}
         <span className="dot" /> WEB DESIGN & HOSTING{" "}
-        <a target="_blank" href="https://www.wordmarketing.net/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.wordmarketing.net/"
+        >
           WORD Marketing
         </a>
       </div>
