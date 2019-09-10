@@ -61,14 +61,9 @@
   align-items: center;
   text-align: center;
   flex-direction: row;
-
   width: 100%;
   height: 30%;
-  /* background-color: #293a6e; */
   color: white;
-  /* font-size: 15px; */
-  /* font-family: "Roboto Condensed", sans-serif;
-  font-stretch: condensed; */
   font-family: "Oswald", sans-serif;
   font-weight: 300;
 }
@@ -99,6 +94,14 @@
 strong {
   margin-bottom: 6px;
   padding: 0;
+}
+.read-more {
+  text-align: right;
+  cursor: pointer;
+  text-decoration: none;
+}
+.read-more:hover {
+  color: rgb(224, 197, 158);
 }
 
 /* ::::::::::::::  MOBILE VIEW :::::::::::::::: */
