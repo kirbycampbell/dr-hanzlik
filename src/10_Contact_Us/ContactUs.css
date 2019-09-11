@@ -81,3 +81,7 @@ label {
 .Submit-Btn:hover {
   background: rgb(0, 107, 0);
 }
+.error {
+  margin-top: 20px;
+  color: red;
+}

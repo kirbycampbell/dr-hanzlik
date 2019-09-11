@@ -5,6 +5,7 @@ import "./ContactUs.css";
 
 const ContactUs = props => {
   const [success, setSuccess] = useState(null);
+  const [error, setError] = useState(null);
   const [emailForm, setEmailForm] = useState({
     name: "",
     email: "",
@@ -20,6 +21,7 @@ const ContactUs = props => {
       event.target.message.value === ""
     ) {
       setSuccess(false);
+      setError("*Fill in All Required Fields*");
     } else {
       setEmailForm({
         name: event.target.name.value,
@@ -54,6 +56,9 @@ const ContactUs = props => {
               },
               err => {
                 console.log("FAILED...", err);
+                setError(
+                  "Something Went wrong sending the message - try again later."
+                );
               }
             );
         }
@@ -112,6 +117,7 @@ const ContactUs = props => {
                 Thank you!
               </div>
             )}
+            {error && <div className="error">{error}</div>}
           </form>
         </div>
       </div>
