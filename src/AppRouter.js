@@ -1,12 +1,15 @@
 import React, { useState } from "react";
+import "./App.css";
 import HomePage from "./03_HomePage/HomePage";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import TopBar from "./01_Static_TopBar/TopBar";
 import Footer from "./02_Static_Footer/Footer";
-import SecondaryPages from "./04_Secondary_Pages/SecondaryPages";
-import "./App.css";
 import MyPractice from "./05_MyPractice/MyPractice";
 import ContactUs from "./10_Contact_Us/ContactUs";
+import PatientInfo from "./06_Patient_Info/PatientInfo";
+import Services from "./07_Services/Services";
+import FAQS from "./09_FAQs/FAQS";
+import Appointments from "./08_Appointments/Appointments";
 
 const AppRouter = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -34,7 +37,7 @@ const AppRouter = () => {
           exact
           path="/Patient-Info"
           render={props => (
-            <SecondaryPages
+            <PatientInfo
               mobileMenu={mobileMenu}
               setMobileMenu={setMobileMenu}
             />
@@ -44,17 +47,14 @@ const AppRouter = () => {
           exact
           path="/Services"
           render={props => (
-            <SecondaryPages
-              mobileMenu={mobileMenu}
-              setMobileMenu={setMobileMenu}
-            />
+            <Services mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
           )}
         />
         <Route
           exact
           path="/Appointments"
           render={props => (
-            <SecondaryPages
+            <Appointments
               mobileMenu={mobileMenu}
               setMobileMenu={setMobileMenu}
             />
@@ -64,10 +64,7 @@ const AppRouter = () => {
           exact
           path="/FAQs"
           render={props => (
-            <SecondaryPages
-              mobileMenu={mobileMenu}
-              setMobileMenu={setMobileMenu}
-            />
+            <FAQS mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
           )}
         />
         <Route
