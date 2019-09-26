@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./MobileNav.css";
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './MobileNav.css';
 const MobileNav = props => {
   return (
     <div
-      className={"Outer-MobileNav " + (props.mobileMenu ? "show" : "hidden")}
+      className={'Outer-MobileNav ' + (props.mobileMenu ? 'show' : 'hidden')}
     >
       <Link
         className="Mobile-nav-link"
         to="/"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         HOME
@@ -19,7 +19,7 @@ const MobileNav = props => {
         className="Mobile-nav-link"
         to="/Practice"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         MY PRACTICE
@@ -28,7 +28,7 @@ const MobileNav = props => {
         className="Mobile-nav-link"
         to="/Patient-Info"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         PATIENT INFO
@@ -37,25 +37,24 @@ const MobileNav = props => {
         className="Mobile-nav-link"
         to="/Services"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         SERVICES
       </Link>
-      <Link
+      <a
         className="Mobile-nav-link"
-        to="/Appointments"
-        onClick={() => {
-          props.setMobileMenu(false);
-        }}
+        href="https://www.rocpdx.com/appointment-request"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         APPOINTMENTS
-      </Link>
+      </a>
       <Link
         className="Mobile-nav-link"
         to="/FAQs"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         FAQ'S
@@ -64,7 +63,7 @@ const MobileNav = props => {
         className="Mobile-nav-link"
         to="/Contact"
         onClick={() => {
-          props.setMobileMenu(false);
+          props.setMobileMenu (false);
         }}
       >
         CONTACT US

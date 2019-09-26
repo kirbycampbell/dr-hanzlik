@@ -36,6 +36,13 @@
   margin-top: 10px;
   font-size: 13.5px;
 }
+.Left-Main-div {
+  flex-direction: column;
+  padding: 1%;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 15px;
+}
 .My-Practice {
   color: #cf9700;
   font-size: 16px;

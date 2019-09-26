@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./PicNav.css";
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './PicNav.css';
 
 const PicNav = () => {
   return (
@@ -9,12 +9,12 @@ const PicNav = () => {
         <div className="Headshot-Outer">
           <img
             className="Headshot"
-            src={process.env.PUBLIC_URL + "/shane-headshot.png"}
+            src={process.env.PUBLIC_URL + '/shane-headshot.png'}
             alt="Hanzlik-headshot"
           />
           <div className="Headshot-Desc">
             <strong>Meet Shane R. Hanzlik, MD</strong>A sports medicine
-            specialist with a clinical focus on cartilage restoration...{" "}
+            specialist with a clinical focus on cartilage restoration...{' '}
             <Link to="/Practice">
               <div className="read-more">READ MORE ></div>
             </Link>
@@ -23,7 +23,7 @@ const PicNav = () => {
         <div className="Pic-Mid">
           <img
             className="Background-Pic"
-            src={process.env.PUBLIC_URL + "/bikerbckgrnd.png"}
+            src={process.env.PUBLIC_URL + '/bikerbckgrnd.png'}
             alt="MountainBiker"
           />
           <div className="Nav-Section">
@@ -39,9 +39,15 @@ const PicNav = () => {
             <Link className="Nav-Btn" to="/Services">
               SERVICES
             </Link>
-            <Link className="Nav-Btn" to="/Appointments">
+            <a
+              className="Nav-Btn"
+              href="https://www.rocpdx.com/appointment-request"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               APPOINTMENTS
-            </Link>
+            </a>
+
             <Link className="Nav-Btn" to="/FAQs">
               FAQ'S
             </Link>
@@ -51,7 +57,7 @@ const PicNav = () => {
           </div>
         </div>
       </div>
-      <div className="Bot-Portion"></div>
+      <div className="Bot-Portion" />
     </div>
   );
 };

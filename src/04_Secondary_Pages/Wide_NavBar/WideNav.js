@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./WideNav.css";
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './WideNav.css';
 
 const WideNav = () => {
   return (
@@ -18,9 +18,15 @@ const WideNav = () => {
         <Link className="Sec-Nav-Btn" to="/Services">
           SERVICES
         </Link>
-        <Link className="Sec-Nav-Btn" to="/Appointments">
+
+        <a
+          className="Sec-Nav-Btn"
+          href="https://www.rocpdx.com/appointment-request"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           APPOINTMENTS
-        </Link>
+        </a>
         <Link className="Sec-Nav-Btn" to="/FAQs">
           FAQ'S
         </Link>

@@ -1,7 +1,7 @@
-import React from "react";
-import "./FAQS.css";
-import SecondaryPages from "../04_Secondary_Pages/SecondaryPages";
-import RightBar from "../04_Secondary_Pages/Right_Bar/RightBar";
+import React from 'react';
+import './FAQS.css';
+import SecondaryPages from '../04_Secondary_Pages/SecondaryPages';
+import RightBar from '../04_Secondary_Pages/Right_Bar/RightBar';
 
 const FAQS = props => {
   return (
@@ -12,8 +12,8 @@ const FAQS = props => {
       />
       <div className="Practice-Columns">
         <div className="Left-Maj-Col">
-          <div className="Left-About-div">
-            <h4 className="My-Practice">FAQS</h4>
+          <div className="Left-Main-div">
+            <div className="FAQ-Title">FAQS</div>
             <div>
               <h4>What are your business hours?</h4>
               <div>
